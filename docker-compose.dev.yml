@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  web:
+    image: trackr/web:local
+    build:
+      context: .
+      target: dotnet_debug
+      args:
+        PROJECT_NAME: TrackR.Web
+        PROJECT_DIR: src/TrackR.Web
+        CONFIG_PROFILE: Debug
+    ports:
+      - "80:80"

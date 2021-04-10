@@ -1,0 +1,36 @@
+.git
+
+# compiled output
+**/dist
+**/dist-server
+**/tmp
+**/out-tsc
+**/bin
+**/obj
+
+# dependencies
+**/node_modules
+
+# IDEs and editors
+**/.idea
+.vs
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+## vscode
+**/.vscode/*
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
+
+# System Files
+.DS_Store
+Thumb.db
+
+**/.gitignore
+.dockerignore
