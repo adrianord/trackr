@@ -2,6 +2,20 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackR.Web", "src\TrackR.Web\TrackR.Web.csproj", "{E243DA5C-060F-4971-A519-AA14E1C5ED4C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{B1D4CDEB-0A30-420C-A2EC-5BB6EF41E4DE}"
+ProjectSection(SolutionItems) = preProject
+	..\Dockerfile = ..\Dockerfile
+	..\docker-compose.dev.yml = ..\docker-compose.dev.yml
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9CB95F9D-13A7-4064-81ED-7E699E9854EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{B04FF710-FDA0-4B5F-A785-2B3EF76D4850}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2F0E2CD8-52F8-418B-BBCC-F2616CF5A5B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackR.Api", "src\TrackR.Api\TrackR.Api.csproj", "{14A36173-94A7-4737-96D7-80BAAED2291E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +26,15 @@ Global
 		{E243DA5C-060F-4971-A519-AA14E1C5ED4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E243DA5C-060F-4971-A519-AA14E1C5ED4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E243DA5C-060F-4971-A519-AA14E1C5ED4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A36173-94A7-4737-96D7-80BAAED2291E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A36173-94A7-4737-96D7-80BAAED2291E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A36173-94A7-4737-96D7-80BAAED2291E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A36173-94A7-4737-96D7-80BAAED2291E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B04FF710-FDA0-4B5F-A785-2B3EF76D4850} = {9CB95F9D-13A7-4064-81ED-7E699E9854EF}
+		{E243DA5C-060F-4971-A519-AA14E1C5ED4C} = {B04FF710-FDA0-4B5F-A785-2B3EF76D4850}
+		{2F0E2CD8-52F8-418B-BBCC-F2616CF5A5B8} = {9CB95F9D-13A7-4064-81ED-7E699E9854EF}
+		{14A36173-94A7-4737-96D7-80BAAED2291E} = {2F0E2CD8-52F8-418B-BBCC-F2616CF5A5B8}
 	EndGlobalSection
 EndGlobal
