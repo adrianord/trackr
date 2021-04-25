@@ -13,7 +13,7 @@ namespace TrackR.Web.Configurations
             {
                 c.CustomSchemaIds(x => x.FullName); // Prevents conflicts with commonly named parameters
                 c.DescribeAllParametersInCamelCase(); // Follow http parameter naming convention
-                c.SwaggerDoc(name: apiInfo.Version, info: apiInfo);
+                c.SwaggerDoc(apiInfo.Version, apiInfo);
                 c.EnableAnnotations();
             });
 

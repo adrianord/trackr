@@ -18,6 +18,7 @@ namespace TrackR.Web
         {
             services.AddControllers()
                     .AddApplicationPart(typeof(AboutController).Assembly);
+                    
             services.AddSwashbuckle(new OpenApiInfo
             {
                 Title = ApiName,
@@ -28,9 +29,7 @@ namespace TrackR.Web
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
-            {
                 app.UseDeveloperExceptionPage();
-            }
 
             app.UseSwashbuckle(ApiName);
 
